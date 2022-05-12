@@ -1,4 +1,4 @@
-# Delete files by regex
+# Delete files containing some string in the filename
 
 Find and delete files that contain a specified string
 
