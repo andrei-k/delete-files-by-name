@@ -16,7 +16,7 @@ func main() {
 	fmt.Println("Enter the string that will be used to search and delete files:")
 	fmt.Scan(&search)
 
-	path = "/Users/andrei/Documents/_lounge37.com/images/01"
+	fmt.Printf("\nPath: %s\nSearch: %s\n\n", path, search)
 
 	// List all files under the path recursively, skipping folders
 	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
