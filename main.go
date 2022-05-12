@@ -32,11 +32,14 @@ func main() {
 		// Check if the file matches the search string
 		if strings.Contains(info.Name(), search) {
 			fmt.Printf("File: %q\n", info.Name())
+
 			// Delete the file
 			err := os.Remove(path)
 			if err != nil {
 				fmt.Println(err)
 			}
+
+			// TODO: Rather than permanently deleting the file, move it to a new folder called "deleted"
 
 			// TODO: Log the file name
 			return nil
