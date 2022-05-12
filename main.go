@@ -12,11 +12,11 @@ func main() {
 	fmt.Println("Enter the path to the folder you want to search and delete files in:")
 	fmt.Scan(&path)
 
-	var regex string
+	var search string
 	fmt.Println("Enter the string that will be used to search and delete files:")
-	fmt.Scan(&regex)
+	fmt.Scan(&search)
 
-	fmt.Printf("\nPath: %s\nRegex: %s\n\n", path, regex)
+	path = "/Users/andrei/Documents/_lounge37.com/images/01"
 
 	// List all files under the path recursively, skipping folders
 	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
@@ -30,7 +30,7 @@ func main() {
 		}
 
 		// Check if the file matches the search string
-		if strings.Contains(info.Name(), regex) {
+		if strings.Contains(info.Name(), search) {
 			fmt.Printf("File: %q\n", info.Name())
 			// TODO: Delete the file
 			// TODO: Log the file name
