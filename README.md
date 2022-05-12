@@ -5,13 +5,13 @@ Find and delete files that contain a specified string
 
 ## Usage
 
-Run in Terminal
+1. Run in Terminal
 
 ```
 go run .
 ```
 
-Enter the path to the folder you want to search and delete files in.  
+2. Enter the path to the folder you want to search and delete files in.  
 
-Enter the string that will be used to search and delete files.
+3. Enter the string that will be used to search and delete files.
 
