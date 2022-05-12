@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 func main() {
@@ -27,11 +28,20 @@ func main() {
 		if info.IsDir() {
 			return nil
 		}
-		fmt.Printf("File: %q\n", path)
+
+		// Check if the file matches the search string
+		if strings.Contains(info.Name(), regex) {
+			fmt.Printf("File: %q\n", info.Name())
+			// TODO: Delete the file
+			// TODO: Log the file name
+			return nil
+		}
+
 		return nil
 	})
 	if err != nil {
 		fmt.Printf("Error walking the path %q: %v\n", path, err)
 		return
 	}
+
 }
