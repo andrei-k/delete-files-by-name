@@ -40,8 +40,8 @@ func main() {
 			}
 
 			// TODO: Rather than permanently deleting the file, move it to a new folder called "deleted"
-
-			// TODO: Log the file name
+			// TODO: This should actually be an option; ask user if they want to permanently delete or not
+			// TODO: If deleting, log the file names
 			return nil
 		}
 
@@ -51,5 +51,4 @@ func main() {
 		fmt.Printf("Error walking the path %q: %v\n", path, err)
 		return
 	}
-
 }
