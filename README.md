@@ -14,5 +14,4 @@ go run .
 2. Enter the path to the folder you want to search and delete files in.  
 *As a shortcut, you can drag a drop the folder from Finder into Terminal.*  
 
-3. Enter the string that will be used to search and delete files.
-
+3. Enter the string. Filenames that contain that string will be deleted.
