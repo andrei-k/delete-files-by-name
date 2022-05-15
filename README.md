@@ -15,3 +15,5 @@ go run .
 *As a shortcut, you can drag a drop the folder from Finder into Terminal.*  
 
 3. Enter a string. Filenames that contain that string will be deleted.
+
+4. Choose to either permanently delete files by pressing "y". Pressing "n" will move files to a new folder.
