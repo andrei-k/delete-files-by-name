@@ -1,3 +1,3 @@
-module github.com/andrei-k/delete-files-by-regex
+module github.com/andrei-k/delete-files-by-name
 
 go 1.18
