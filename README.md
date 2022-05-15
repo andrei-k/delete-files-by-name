@@ -16,4 +16,4 @@ go run .
 
 3. Enter a string. Filenames that contain that string will be deleted.
 
-4. Choose to either permanently delete files by pressing "y". Pressing "n" will move files to a new folder.
+4. Choose to permanently delete files by pressing "y". (Deleted filenames will be logged in a text file.) Pressing "n" will move files to a new folder.
