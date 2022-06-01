@@ -1,5 +1,7 @@
 # Delete files containing some string in the filename
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/andrei-k/delete-files-by-name)](https://goreportcard.com/report/github.com/andrei-k/delete-files-by-name)
+
 Find and delete files that contain a specified string
 
 
